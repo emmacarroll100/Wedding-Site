@@ -1,0 +1,466 @@
+
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans:300');
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+
+body {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #636363;
+  margin: 0;
+}
+main {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* ----------------------------------------
+Header and Footer
+------------------------------------------- */
+header, footer {
+  background-color: #E3F0F2;
+  text-align: center;
+}
+header {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+footer {
+  padding: 25px 0px 25px 0px;
+  margin-top: 40px;
+}
+
+.exit {
+  display: block;
+  color: #aaa;
+  position: absolute;
+  top: 0px;
+  font-size: 28px;
+  font-weight: bold;
+
+}
+
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+h1, h2, h3, h4 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  z-index: 8;
+  color: #474747;
+}
+
+.date {
+  margin-top: 0px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+p {
+  font-size: 15px;
+  text-align: justify;
+  text-transform: none;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.5px;
+}
+li {
+  list-style: none;
+  text-align: left;
+  line-height: 33px;
+  text-transform: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+}
+ul {
+  padding-left: 0px;
+  text-transform: none;
+}
+.copy b {
+ font-weight: bold;
+}
+.mini-container {
+  width: 800px;
+  margin: 0 auto;
+}
+.mini-container-center {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+input[type=text] {
+  width:400px;
+  height: 25px;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+input[type=checkbox] {
+  display: inline-block;
+}
+
+.form {
+  position: absolute;
+}
+.button {
+    background-color: #636363;
+    border: 1px solid #636363;
+    color: #EAF1F2;
+    padding: 10px 32px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 20px;
+    position: relative;
+    left: 50%;
+    align: center;
+    transform: translateY(-50%) translateX(-50%);
+    border-radius: 3px;
+}
+
+.button:hover {
+  background-color: white;
+  border: 1px solid #636363;
+  color: #636363;
+}
+
+.success{
+  border: 2px solid #636363;
+}
+
+div {
+  margin-bottom: 15px;
+}
+/* ----------------------------------------
+Modal for RSVP
+------------------------------------------- */
+
+.modal {
+    position: fixed;
+    z-index: 11;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+
+.modal-content {
+    background-color: #EAF1F2;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    display: none;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    display: none;
+}
+
+/* ----------------------------------------
+Success Modal
+------------------------------------------- */
+.successmodal {
+    /*display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 11;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+
+/* ----------------------------------------
+Images
+------------------------------------------- */
+img {
+  display: block;
+  margin: 0px auto;
+  max-width: 100%;
+}
+.sf{
+  padding-top: 20px;
+}
+.icons{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mini-container .icons{
+    margin: 0px;
+}
+
+/* ----------------------------------------
+Other
+------------------------------------------- */
+
+hr {
+  padding:0px 20px 0px 20px;
+  margin-top: 30px;
+}
+
+section {
+  text-align: left;
+}
+
+a {
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 3px;
+  border-width: thin;
+  color: #636363;
+  text-decoration: none;
+  margin: 10px 10px 10px 10px;
+  transition: all 0.5s ease;
+}
+
+a:hover, a:focus {
+    color: #aaa;
+    outline: none;
+    text-decoration: none;
+}
+
+a:active {
+      color: pink;
+      outline: none;
+      text-decoration: none;
+}
+/* Grid Container!! */
+.bridal-party {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 3px;
+  padding-left: 100px;
+}
+.bridesmaids {
+  display: grid;
+  grid-template-columns: repeat(1fr, 3fr);
+  grid-gap: 1px;
+  line-height: normal;
+}
+.bridesmaids h3 {
+  text-align: left;
+}
+.profile {
+  float: left;
+  padding-right: 20px;
+  margin: 0px;
+}
+.venue {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 1px;
+}
+.trips {
+  text-transform: none;
+}
+.hero {
+  background-image: url("../images/bg2.jpg");
+  margin-top: 70px;
+  padding-bottom: 15px;
+}
+.i {
+  display: inline;
+}
+.email, .phone {
+  display: inline;
+  padding: 0px;
+  text-decoration: none;
+  margin: 0px;
+  position: relative;
+  right: 8px;
+}
+
+.location {
+  position: relative;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+	background-color: rgba(227, 240, 250, .85);
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.overlay:hover {
+	opacity: 100;
+}
+
+.address {
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  color: #474747;
+  font-weight: bold;
+}
+
+main .location{
+  max-width: 100%;
+}
+
+.entourage {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bridal-header {
+  text-align: center;
+}
+.google {
+  display: inline;
+}
+
+.gifts {
+    text-align: center;
+}
+
+/* -------------------------------------
+Responsive design!!
+-------------------------------------*/
+
+@media screen and (max-width: 810px) {
+  .mini-container {
+      width: 100%;
+    }
+}
+@media screen and (max-width: 805px) {
+  p {
+      font-size: 13px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .email {
+    display: block;
+  }
+
+  h2 {
+      font-size: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  h3 {
+      font-size: 16px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  h4 {
+      font-size: 14px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  li {
+      font-size: 13px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+  footer a {
+      display: inline-block;
+    }
+
+  footer {
+      padding-top: 10px;
+      padding-bottom: 3px;
+    }
+}
+@media screen and (max-width: 800px) {
+  .venue {
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+  }
+
+  .address p {
+    font-size: 10px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hamburger {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  nav a {
+      display: block;
+  }
+
+  .hero {
+      margin-top: 0px;
+      padding-bottom: 5px;
+      border-radius: 3px;
+    }
+
+  h1 {
+      font-size: 30px;
+      margin-bottom: 0px;
+      padding-top: 50px
+  }
+
+  .date {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bridal-party {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .icons {
+    display:flex;
+  }
+}
